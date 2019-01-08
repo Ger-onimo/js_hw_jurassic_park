@@ -37,25 +37,20 @@ describe('Park', function() {
   });
 
 
-  // it('should be able to add a dinosaur to its collection', function() {
-  //   park.addDinosaur('Elvis')
-  //   const actual = park.dinoCollection.length;
-  //   assert.strictEqual(actual, 1);
-  // });
+  it('should be able to add a dinosaur to its collection', function() {
+    park.addDinosaur(dino4);
+    const actual = park.dinoCollection.length;
+    assert.strictEqual(actual, 4);
+  });
 
-  // it('should be able to remove a dinosaur from its collection', function() {
-  //   park.addDinosaur('Elvis')
-  //   park.addDinosaur('Polly')
-  //   park.removeDinosaur('Elvis')
-  //   const expected = ['Polly']
-  //   const actual = park.dinoCollection;
-  //   assert.strictEqual(actual, expected);
-
+  it('should be able to remove a dinosaur from its collection', function() {
+    park.addDinosaur(dino4);
+    park.removeDinosaur(dino3);
+    const actual = park.dinoCollection.length;
+    assert.strictEqual(actual, 3);
+});
 
   // it('should be able to find the dinosaur that attracts the most visitors'), function() {
-  //   const actual = park.dinoVisitorCount
-  //
-  // };
 
   // it('should be able to find all dinosaurs of a particular species');
   //

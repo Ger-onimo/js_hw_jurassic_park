@@ -6,16 +6,15 @@ const Park = function(name, ticketPrice, dinoCollection) {
   this.dinoCollection = dinoCollection;
 };
 
-// Park.prototype.addDinosaur = function(dinosaurName) {
-//   this.dinoCollection.push(dinosaurName);
-// };
+Park.prototype.addDinosaur = function(dinosaurName) {
+  this.dinoCollection.push(dinosaurName);
+};
 
-// // TODO - not working??
 // Park.prototype.removeDinosaur = function(dinosaurName) {
 //   // const indexOfDinos = this.dinoCollection.indexOf(dinosaurName);
 //   this.dinoCollection.splice(this.dinoCollection.indexOf(dinosaurName), 1);
 // };
-// //
+
 
 
 
