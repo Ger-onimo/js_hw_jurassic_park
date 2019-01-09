@@ -19,15 +19,9 @@ Park.prototype.findDinosaur = function(speciesName) {
   return this.dinoCollection.filter(dino => dino.species === speciesName)
 };
 
-// Park.prototype.removeSpecies = function (speciesName) {
-//   const foundSpecies = [];
-//
-//   for(const species in this.dinoCollection) {
-//     if(species !== speciesName) {
-//       foundSpecies.push(species);
-//     }
-//   }
-// };
+Park.prototype.removeSpecies = function (speciesName) {
+  this.dinoCollection = this.dinoCollection.filter(dino => dino.species !== speciesName)
+};
 
 
 module.exports = Park

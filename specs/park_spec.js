@@ -63,11 +63,11 @@ describe('Park', function() {
   assert.deepStrictEqual(actual, [dino2, dino4])
   });
 
-    // it('should be able to remove all dinosaurs of a particular species', function() {
-    // park.addDinosaur(dino2);
-    // const actual = park.removeSpecies('brachiosaurus')
-    // assert.strictEqual(actual, [dino1, dino2, dino4])
-    // });
+    it('should be able to remove all dinosaurs of a particular species', function() {
+    park.removeSpecies('brachiosaurus');
+    const actual = park.dinoCollection;
+    assert.deepStrictEqual(actual, [dino1, dino3])
+    });
 
 });
 
@@ -83,7 +83,7 @@ describe('Park', function() {
 // Add a dinosaur to its collection of dinosaurs - DONE
 // Remove a dinosaur from its collection of dinosaurs - DONE
 // Find the dinosaur that attracts the most visitors
-// Find all dinosaurs of a particular species
+// Find all dinosaurs of a particular species - DONE
 // Calculate the total number of visitors per day
 // Calculate the total number of visitors per year
 // Calculate the total revenue from ticket sales for one year
