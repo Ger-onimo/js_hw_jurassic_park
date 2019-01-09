@@ -7,7 +7,7 @@ describe('Park', function() {
   let dino2;
   let dino3;
   let dino4;
-  let dino5
+  let dino5;
   let dinoCollection;
   let park;
 
@@ -15,7 +15,7 @@ describe('Park', function() {
     dino1 = new Dinosaur('spinosaurus', 'carnivore', 75);
     dino2 = new Dinosaur('brachiosaurus', 'herbivore', 100);
     dino3 = new Dinosaur('avimimus', 'omnivore', 200);
-    dino4 = new Dinosaur('brachiosaurus', 'herbivore', 100);
+    dino4 = new Dinosaur('brachiosaurus', 'herbivore', 150);
     dino5 = new Dinosaur('allosaurus', 'carnivore', 300);
 
     dinoCollection = [dino1, dino2, dino3];
@@ -60,7 +60,7 @@ describe('Park', function() {
   it('should be able to find all dinosaurs of a particular species', function() {
   park.addDinosaur(dino4);
   const actual = park.findDinosaur('brachiosaurus')
-  assert.strictEqual(actual, [dino2, dino4])
+  assert.deepStrictEqual(actual, [dino2, dino4])
   });
 
     // it('should be able to remove all dinosaurs of a particular species', function() {
